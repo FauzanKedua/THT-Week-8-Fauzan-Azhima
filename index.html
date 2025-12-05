@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Fauzan Azhima</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="profile-photo">
+                <img src="1.1.jpg" alt="Foto Profil Fauzan Azhima">
+            </div>
+            <h1 class="nama">Fauzan Azhima</h1>
+            <p class="jabatan">Undergraduate Computer Science Student at Pertamina University | Graphics Designer | UI/UX enthusiasts | Web Developer enthusiast</p>
+            <div class="kontak">
+                <p>fauzannazhimaa@gmail.com</p>
+                <p>www.linkedin.com/in/fauzannazhimaa</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section ringkasan-section">
+            <h2 class="section-title">Ringkasan</h2>
+            <p>Passionate Graphics Designer | UI/UX Enthusiast | Student at Pertamina University</p>
+            <p>I am a creative and detail-oriented designer with a strong passion for visual storytelling and user-centered design. Currently pursuing my studies at Pertamina University, I specialize in graphic design, UI/UX principles, and front-end development.</p>
+        </section>
+
+        <hr>
+
+        <div class="two-column-layout">
+            <section class="section keahlian-section">
+                <h2 class="section-title">Keahlian Teratas</h2>
+                <ul class="list-keahlian">
+                    <li>Next.js</li>
+                    <li>Java</li>
+                    <li>Web Engineering</li>
+                    <li>Front End Development Libraries (Cert.)</li>
+                    <li>Data Visualization (Cert.)</li>
+                </ul>
+            </section>
+
+            <section class="section pendidikan-section">
+                <h2 class="section-title">Pendidikan</h2>
+                <div class="education-item">
+                    <h3>Universitas Pertamina</h3>
+                    <p>Bachelor of Computer Science, Computer Science (2022)</p>
+                </div>
+                <div class="education-item">
+                    <h3>Madrasah Aliyah Negeri 1 Kota Bukittinggi</h3>
+                    <p>Science (Juli 2019 - Maret 2022)</p>
+                </div>
+            </section>
+        </div>
+
+        <hr>
+
+        <section class="section pengalaman-section">
+            <h2 class="section-title">Pengalaman</h2>
+
+            <article class="experience-card">
+                <h3>Junior Software Engineer</h3>
+                <p class="company">PT Logeeka Grup Indonesia</p>
+                <p class="duration">Agustus 2025 - Present (3 bulan)</p>
+            </article>
+
+            <article class="experience-card">
+                <h3>Head of Department of Information Media HMIK</h3>
+                <p class="company">Himpunan Mahasiswa Ilmu Komputer - Universitas Pertamina</p>
+                <p class="duration">Januari 2025 - Present (10 bulan)</p>
+                <p class="description">As the Head of Media and Information, I lead the development of digital content, branding, and communication strategies to enhance the association's online presence.</p>
+            </article>
+
+            <article class="experience-card">
+                <h3>Technical Session Team ICEUPERTAIN 2024</h3>
+                <p class="company">Universitas Pertamina (Official)</p>
+                <p class="duration">November 2024</p>
+            </article>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <h2 class="section-title">Kontak Saya</h2>
+            <p class="contact-desc">Silakan kirim pesan melalui form berikut.</p>
+
+            <div id="successMessage" class="success-text"></div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" id="name">
+                    <small id="nameError" class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                    <small id="emailError" class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Pesan</label>
+                    <textarea id="message" rows="4"></textarea>
+                    <small id="messageError" class="error-text"></small>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </section>
+        </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Fauzan Azhima | 105222003</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
